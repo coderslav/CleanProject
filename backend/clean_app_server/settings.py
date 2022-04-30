@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+from django.apps import AppConfig
 from dotenv import load_dotenv
 import os
 load_dotenv()
@@ -40,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'api'
+
+    'api.apps.ApiConfig'
 ]
 
 MIDDLEWARE = [
